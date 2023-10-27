@@ -1,0 +1,141 @@
+body {
+    background: #74A12E;
+    text-align: justify;
+    font-family: Helvetica;
+    color: black;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: #B8A66F;
+}
+p {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul,
+ol {
+    display: inline-block;
+    text-align: left;
+    list-style: circle;
+    list-style-position: inside;
+}
+h1,
+h2,
+h3 {
+    color: #74A12E;
+}
+div.text-box {
+    width: 50%;
+    padding: 30px 75px;
+    border: 5px solid #006335;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F7EB;
+    margin-top: 150px;
+}
+div.header {
+    text-align: center;
+    background-color: #F5F7EB;
+    -moz-box-shadow: inset 0 -20px 20px -10px #B8A66F;
+    -webkit-box-shadow: inset 0 -20px 20px -10px #B8A66F;
+    box-shadow: inset 0px -20px 20px -10px #B8A66F;
+    /* How do I do a gradient with a %....oh I probably could just do a inner shadow to get what I'm looking for */
+    /* Box-shadow inset is what I needed I think - mm 10/24/23 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 100vw;
+    z-index: 99;
+}
+
+#circle {
+    border-radius: 50%;
+    margin-top: 150px;
+    border: solid white 5px;
+    width: 200px;
+}
+
+#text {
+    margin-top: 75px;
+    text-align: center;
+    font-weight: bold;
+    background: #F5F7EB;
+    border: 5px solid #006335;
+    padding: 35px;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 5vw);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 20px;
+    background: #F5F7EB;
+    border: 5px solid #006335;
+    justify-content: center;
+}
+
+.galleryimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: drop-shadow(5px 5px 2px #B8A66F);
+
+}
+
+.galleryitem-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.galleryitem-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.galleryitem-3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.galleryitem-4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.galleryitem-5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.galleryitem-6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
