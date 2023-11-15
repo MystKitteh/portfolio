@@ -92,7 +92,7 @@ div.gallery {
     margin-bottom: 25px;
 }
 /* I need to edit this Grid later but it'll do for now */
-.grid-container {
+/*.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
@@ -106,16 +106,31 @@ div.gallery {
   align-content: space-between;
   justify-content: space-around;
   
+}*/
+.analysis {
+ display: flex;
+ padding-top: 100px;
+ justify-content: space-around;
+ margin: 30px;
 }
-.grid-left {
-  grid-area: a;
-width: 40%;
+.left {
+  flex: 40%;
+    padding: 30px;
+    border: 5px solid  #006335;
+  background-color: #F5F7EB;
+  margin-right: 25px;
 }
-.grid-right {
-  grid-area: b;
-width: 40%;
+.right {
+  flex: 40%;
+  padding: 30px;
+  border: 5px solid  #006335;
+  background-color: #F5F7EB;
+  }
+.shadowbox {
+    display: inline-block;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
-.text {
-    color: white;
+.borderbox {
+    width:500px;
+    border: 5px solid #006335;
 }
